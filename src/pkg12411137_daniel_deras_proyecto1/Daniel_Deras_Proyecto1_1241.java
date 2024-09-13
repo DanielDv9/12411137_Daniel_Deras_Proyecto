@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -67,6 +68,40 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
         txt_vida = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         label_fondo4 = new javax.swing.JLabel();
+        panel_tienda = new javax.swing.JDialog();
+        jPanel7 = new javax.swing.JPanel();
+        btn_garrasdehaas = new javax.swing.JButton();
+        btn_filodesesperante = new javax.swing.JButton();
+        btn_varitadegenio = new javax.swing.JButton();
+        btn_alassangrientas = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        btn_regresar = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        panel_batalla_mid = new javax.swing.JDialog();
+        jPanel8 = new javax.swing.JPanel();
+        btn_farmear1 = new javax.swing.JButton();
+        btn_tienda1 = new javax.swing.JButton();
+        btn_ult1 = new javax.swing.JButton();
+        btn_ataque1 = new javax.swing.JButton();
+        btn_curar1 = new javax.swing.JButton();
+        txt_vidaenemigo1 = new javax.swing.JLabel();
+        txt_oro1 = new javax.swing.JLabel();
+        txt_lvl1 = new javax.swing.JLabel();
+        txt_vida1 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        label_fondo5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         btn_goldlane = new javax.swing.JButton();
         btn_midlane = new javax.swing.JButton();
@@ -231,9 +266,19 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
         jPanel6.add(btn_farmear, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, -1, -1));
 
         btn_tienda.setText("Tienda");
+        btn_tienda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tiendaMouseClicked(evt);
+            }
+        });
         jPanel6.add(btn_tienda, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
 
         btn_ult.setText("Ultimate");
+        btn_ult.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_ultMouseClicked(evt);
+            }
+        });
         jPanel6.add(btn_ult, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
 
         btn_ataque.setText("Atacar");
@@ -252,23 +297,24 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
         });
         jPanel6.add(btn_curar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 70, 20));
 
+        txt_vidaenemigo.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         txt_vidaenemigo.setText("Vida del Enemigo");
-        jPanel6.add(txt_vidaenemigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 50, -1, -1));
+        jPanel6.add(txt_vidaenemigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, -1, -1));
 
-        txt_oro.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        txt_oro.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         txt_oro.setForeground(new java.awt.Color(255, 255, 255));
         txt_oro.setText("Oro");
-        jPanel6.add(txt_oro, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, 70, 20));
+        jPanel6.add(txt_oro, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 120, 20));
 
         txt_lvl.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         txt_lvl.setForeground(new java.awt.Color(255, 255, 255));
         txt_lvl.setText("Lvl");
         jPanel6.add(txt_lvl, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 70, 20));
 
-        txt_vida.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
+        txt_vida.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         txt_vida.setForeground(new java.awt.Color(255, 255, 255));
         txt_vida.setText("Vida");
-        jPanel6.add(txt_vida, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 80, -1));
+        jPanel6.add(txt_vida, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 110, -1));
 
         jLabel5.setText("jLabel5");
         jPanel6.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 90, 130));
@@ -286,6 +332,196 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
         panel_batalla_junglerLayout.setVerticalGroup(
             panel_batalla_junglerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel7.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btn_garrasdehaas.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive\\Documentos\\AImagenesProyectoJava\\garras_haas.png")); // NOI18N
+        btn_garrasdehaas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_garrasdehaasMouseClicked(evt);
+            }
+        });
+        jPanel7.add(btn_garrasdehaas, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 60, 60));
+
+        btn_filodesesperante.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive\\Documentos\\AImagenesProyectoJava\\filo desesperante.png")); // NOI18N
+        btn_filodesesperante.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_filodesesperanteMouseClicked(evt);
+            }
+        });
+        jPanel7.add(btn_filodesesperante, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 60, 60));
+
+        btn_varitadegenio.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive\\Documentos\\AImagenesProyectoJava\\VaritadeGenio.jpg")); // NOI18N
+        btn_varitadegenio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_varitadegenioMouseClicked(evt);
+            }
+        });
+        jPanel7.add(btn_varitadegenio, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 60, 60));
+
+        btn_alassangrientas.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive\\Documentos\\AImagenesProyectoJava\\Alas_sangrientas.png")); // NOI18N
+        btn_alassangrientas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_alassangrientasMouseClicked(evt);
+            }
+        });
+        jPanel7.add(btn_alassangrientas, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 60, 60));
+
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("+70 dano");
+        jPanel7.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 140, 90, -1));
+
+        btn_regresar.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive\\Documentos\\AImagenesProyectoJava\\regresar_.png")); // NOI18N
+        btn_regresar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_regresarMouseClicked(evt);
+            }
+        });
+        jPanel7.add(btn_regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 60));
+
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Alas sangrientas");
+        jPanel7.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, 90, -1));
+
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("1810 Oro");
+        jPanel7.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 90, -1));
+
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("+100 dano");
+        jPanel7.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 90, -1));
+
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel23.setText("3010 Oro");
+        jPanel7.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 90, -1));
+
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setText("+60 dano");
+        jPanel7.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 90, -1));
+
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("2000 Oro");
+        jPanel7.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 90, -1));
+
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("+200 dano");
+        jPanel7.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 90, -1));
+
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setText("3010 Oro");
+        jPanel7.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, 90, -1));
+
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel28.setText("Garras de Haas");
+        jPanel7.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 90, -1));
+
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("Filo desesperante");
+        jPanel7.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 90, -1));
+
+        jLabel30.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setText("Bienvenido a la Tienda");
+        jPanel7.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 190, 30));
+
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel31.setText("+90 dano");
+        jPanel7.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 90, -1));
+
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setText("Varita de genio");
+        jPanel7.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, 90, -1));
+
+        javax.swing.GroupLayout panel_tiendaLayout = new javax.swing.GroupLayout(panel_tienda.getContentPane());
+        panel_tienda.getContentPane().setLayout(panel_tiendaLayout);
+        panel_tiendaLayout.setHorizontalGroup(
+            panel_tiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+        );
+        panel_tiendaLayout.setVerticalGroup(
+            panel_tiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE)
+        );
+
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btn_farmear1.setText("Farmear");
+        btn_farmear1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_farmear1MouseClicked(evt);
+            }
+        });
+        jPanel8.add(btn_farmear1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, -1, -1));
+
+        btn_tienda1.setText("Tienda");
+        btn_tienda1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_tienda1MouseClicked(evt);
+            }
+        });
+        jPanel8.add(btn_tienda1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
+
+        btn_ult1.setText("Ultimate");
+        btn_ult1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_ult1MouseClicked(evt);
+            }
+        });
+        jPanel8.add(btn_ult1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
+
+        btn_ataque1.setText("Atacar");
+        btn_ataque1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_ataque1MouseClicked(evt);
+            }
+        });
+        jPanel8.add(btn_ataque1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, -1, -1));
+
+        btn_curar1.setText("Curar");
+        btn_curar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_curar1MouseClicked(evt);
+            }
+        });
+        jPanel8.add(btn_curar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 70, 20));
+
+        txt_vidaenemigo1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        txt_vidaenemigo1.setText("Vida del Enemigo");
+        jPanel8.add(txt_vidaenemigo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, -1, -1));
+
+        txt_oro1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        txt_oro1.setForeground(new java.awt.Color(255, 255, 255));
+        txt_oro1.setText("Oro");
+        jPanel8.add(txt_oro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 120, 20));
+
+        txt_lvl1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        txt_lvl1.setForeground(new java.awt.Color(255, 255, 255));
+        txt_lvl1.setText("Lvl");
+        jPanel8.add(txt_lvl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 70, 20));
+
+        txt_vida1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        txt_vida1.setForeground(new java.awt.Color(255, 255, 255));
+        txt_vida1.setText("Vida");
+        jPanel8.add(txt_vida1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 110, -1));
+
+        jLabel6.setText("jLabel5");
+        jPanel8.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 90, 130));
+
+        label_fondo5.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive\\Documentos\\AImagenesProyectoJava\\fondo de batalla(descarga).jpeg")); // NOI18N
+        label_fondo5.setText("Terizla");
+        jPanel8.add(label_fondo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-70, 0, 650, 310));
+
+        javax.swing.GroupLayout panel_batalla_midLayout = new javax.swing.GroupLayout(panel_batalla_mid.getContentPane());
+        panel_batalla_mid.getContentPane().setLayout(panel_batalla_midLayout);
+        panel_batalla_midLayout.setHorizontalGroup(
+            panel_batalla_midLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        panel_batalla_midLayout.setVerticalGroup(
+            panel_batalla_midLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -417,18 +653,30 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
     private void btn_cecilionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_cecilionMouseClicked
         /*Al momento de presionar el boton de la seleccion de heroes nos abre una nueva ventana y crea el personaje
         y crea el enemigo y los almacena en un ArrayList separados*/
-        Jugador jugador = new Jugador("Cecilion", 1000, 0, 1, 15);
+        panel_batalla_jungler.setLocationRelativeTo(null);
+        Jugador jugador = new Jugador("Yin", 1000, 0, 1, 10);
         jugadores.add(jugador);
+        Enemigo enemigo = new Enemigo("Zhask", 30,0,1,15);
+        enemigos.add(enemigo);
+        txt_vida1.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
+        txt_lvl1.setText(String.valueOf("Lvl " + jugadores.get(0).getNivel()) + "/10");
+        txt_oro1.setText(String.valueOf("Oro " + jugadores.get(0).getOro()));
+        txt_vidaenemigo1.setText(String.valueOf(enemigos.get(0).getVida()) + "/1000");
+        panel_batalla_mid.setVisible(true);
+        panel_batalla_mid.setModal(true);
+        panel_batalla_mid.pack();
+        panel_midlane.setVisible(false);
     }//GEN-LAST:event_btn_cecilionMouseClicked
 
     private void btn_yinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_yinMouseClicked
         /*Al momento de presionar el boton de la seleccion de heroes nos abre una nueva ventana y crea el personaje
         y crea el enemigo y los almacena en un ArrayList separados*/
-        Jugador jugador = new Jugador("Yin", 1000, 0, 1, 20);
+        panel_batalla_jungler.setLocationRelativeTo(null);
+        Jugador jugador = new Jugador("Yin", 1000, 0, 1, 10);
         jugadores.add(jugador);
-        Enemigo enemigo = new Enemigo("Alpha", 1000,0,1,15);
+        Enemigo enemigo = new Enemigo("Alpha", 9,0,1,15);
         enemigos.add(enemigo);
-        jugadores.get(0).setVida(900);
+        
         txt_vida.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
         txt_lvl.setText(String.valueOf("Lvl " + jugadores.get(0).getNivel()) + "/10");
         txt_oro.setText(String.valueOf("Oro " + jugadores.get(0).getOro()));
@@ -438,43 +686,142 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
         panel_batalla_jungler.pack();
         panel_jungler.setVisible(false);
         
+        
     }//GEN-LAST:event_btn_yinMouseClicked
 
     private void btn_curarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_curarMouseClicked
         //Aumenta la vida del jugador
-        if (jugadores.get(0).getVida()<1000 && cont_vida > 0) {
-            jugadores.get(0).setVida(jugadores.get(0).getVida() + 50);
-            txt_vida.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
-            cont_vida--;
-        }
-        if (cont_vida <= 0) {
-            System.out.println("Se te acabaron las curas");
-        }
-        if (jugadores.get(0).getVida()>999) {
-            System.out.println("Ya tienes vida completa");
-            jugadores.get(0).setVida(1000);
-            txt_vida.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
-        }
-        
-        
+        Curar();
+        Bot();
     }//GEN-LAST:event_btn_curarMouseClicked
 
     private void btn_farmearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_farmearMouseClicked
         //Esta accion genera oro al jugador y al mismo tiempo genera un porcentaje de nivel
-        jugadores.get(0).setOro(jugadores.get(0).getOro() + 250);
-        txt_oro.setText(String.valueOf("Oro " + jugadores.get(0).getOro()));
-        cont_oro ++;
-        SubirLvl();
-        txt_lvl.setText(String.valueOf("Lvl " + jugadores.get(0).getNivel()) + "/10");
-
+        Farmear();
+        Bot();
     }//GEN-LAST:event_btn_farmearMouseClicked
 
     private void btn_ataqueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ataqueMouseClicked
-
-        enemigos.get(0).setVida(enemigos.get(0).getVida() - jugadores.get(0).getDano());
-        txt_vidaenemigo.setText(String.valueOf(enemigos.get(0).getVida()) + "/1000");
-
+        Atacar();
+        if (enemigos.get(0).getVida() <= 0) {
+            panel_batalla_jungler.setVisible(false);
+        }
+        Bot();
+        
+        
     }//GEN-LAST:event_btn_ataqueMouseClicked
+
+    private void btn_tiendaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tiendaMouseClicked
+        panel_tienda.setVisible(true);
+        panel_tienda.setModal(true);
+        panel_tienda.pack();
+    }//GEN-LAST:event_btn_tiendaMouseClicked
+
+    private void btn_regresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_regresarMouseClicked
+
+        panel_tienda.setVisible(false);
+    }//GEN-LAST:event_btn_regresarMouseClicked
+
+    private void btn_garrasdehaasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_garrasdehaasMouseClicked
+        if (jugadores.get(0).getOro() < 1810) {
+            JOptionPane.showMessageDialog(this, "Lo sentimos no tienes suficiente dinero");
+            panel_tienda.setVisible(false);
+        }else{
+            jugadores.get(0).setDano(jugadores.get(0).getDano() + 70);
+            jugadores.get(0).setOro(jugadores.get(0).getOro() - 1810);
+            JOptionPane.showMessageDialog(this, "Su ataque ha aumentado, Vuelva pronto");
+            panel_tienda.setVisible(false);
+            txt_oro.setText(String.valueOf("Oro " + jugadores.get(0).getOro()));
+            
+        }
+        Bot();
+    }//GEN-LAST:event_btn_garrasdehaasMouseClicked
+
+    private void btn_filodesesperanteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_filodesesperanteMouseClicked
+        if (jugadores.get(0).getOro() < 3010) {
+            JOptionPane.showMessageDialog(this, "Lo sentimos no tienes suficiente dinero");
+            panel_tienda.setVisible(false);
+        }else{
+            jugadores.get(0).setDano(jugadores.get(0).getDano() + 100);
+            jugadores.get(0).setOro(jugadores.get(0).getOro() - 3010);
+            JOptionPane.showMessageDialog(this, "Su ataque ha aumentado, Vuelva pronto");
+            panel_tienda.setVisible(false);
+            txt_oro.setText(String.valueOf("Oro " + jugadores.get(0).getOro()));
+            
+        }
+        Bot();
+    }//GEN-LAST:event_btn_filodesesperanteMouseClicked
+
+    private void btn_varitadegenioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_varitadegenioMouseClicked
+        if (jugadores.get(0).getOro() < 2000) {
+            JOptionPane.showMessageDialog(this, "Lo sentimos no tienes suficiente dinero");
+            panel_tienda.setVisible(false);
+        }else{
+            jugadores.get(0).setDano(jugadores.get(0).getDano() + 60);
+            jugadores.get(0).setOro(jugadores.get(0).getOro() - 2000);
+            JOptionPane.showMessageDialog(this, "Su ataque ha aumentado, Vuelva pronto");
+            panel_tienda.setVisible(false);
+            txt_oro.setText(String.valueOf("Oro " + jugadores.get(0).getOro()));
+            
+        }
+        Bot();
+    }//GEN-LAST:event_btn_varitadegenioMouseClicked
+
+    private void btn_alassangrientasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_alassangrientasMouseClicked
+        if (jugadores.get(0).getOro() < 3010) {
+            JOptionPane.showMessageDialog(this, "Lo sentimos no tienes suficiente dinero");
+            panel_tienda.setVisible(false);
+        }else{
+            jugadores.get(0).setDano(jugadores.get(0).getDano() + 90);
+            jugadores.get(0).setOro(jugadores.get(0).getOro() - 3000);
+            jugadores.get(0).setVida(jugadores.get(0).getVida() + 200);
+            JOptionPane.showMessageDialog(this, "Su ataque ha aumentado, Vuelva pronto");
+            panel_tienda.setVisible(false);
+            txt_oro.setText(String.valueOf("Oro " + jugadores.get(0).getOro()));
+            txt_vida.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
+        }
+        Bot();
+    }//GEN-LAST:event_btn_alassangrientasMouseClicked
+
+    private void btn_ultMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ultMouseClicked
+        ult();
+        if (enemigos.get(0).getVida() <= 0) {
+            panel_batalla_jungler.setVisible(false);
+        }
+        Bot();
+    }//GEN-LAST:event_btn_ultMouseClicked
+
+    private void btn_farmear1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_farmear1MouseClicked
+        Farmear();
+        Bot();
+    }//GEN-LAST:event_btn_farmear1MouseClicked
+
+    private void btn_tienda1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tienda1MouseClicked
+        panel_tienda.setVisible(true);
+        panel_tienda.setModal(true);
+        panel_tienda.pack();
+    }//GEN-LAST:event_btn_tienda1MouseClicked
+
+    private void btn_ult1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ult1MouseClicked
+        ult();
+        if (enemigos.get(0).getVida() <= 0) {
+            panel_batalla_mid.setVisible(false);
+        }
+        Bot();
+    }//GEN-LAST:event_btn_ult1MouseClicked
+
+    private void btn_ataque1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ataque1MouseClicked
+        Atacar();
+        if (enemigos.get(0).getVida() <= 0) {
+            panel_batalla_mid.setVisible(false);
+        }
+        Bot();
+    }//GEN-LAST:event_btn_ataque1MouseClicked
+
+    private void btn_curar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_curar1MouseClicked
+        Curar();
+        Bot();
+    }//GEN-LAST:event_btn_curar1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -514,21 +861,35 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
     //metodo de Inteligencia Artificial
     //Por cada turno que tenga el jugador tambien el bot va actuar dependiendo de un random
     public void Bot(){
-        int random = numr.nextInt(10);
+        int random = numr.nextInt(1,4);
         //Atacar
         if (random == 1) {
             jugadores.get(0).setVida( jugadores.get(0).getVida() - enemigos.get(0).getDano());
+            JOptionPane.showMessageDialog(this, "El enemigo te ha golpeado");
+            txt_vida.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
+            txt_vida1.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
+            if (jugadores.get(0).getVida() <= 0) {
+                JOptionPane.showMessageDialog(this, "Has perdido");
+                panel_batalla_jungler.setVisible(false);
+            }
+            
         }//Farmear
         else if (random == 2) {
-            enemigos.get(0).setOro(enemigos.get(0).getOro() + 250);
+            enemigos.get(0).setOro(enemigos.get(0).getOro() + 500);
               
         }//Comprar
         else if (random == 3) {
             //Aqui tengo que poner la opcion de poder comprar objetos  
             //if oro es mayor que esto compro esto
+            if (enemigos.get(0).getOro()  >= 1000) {
+                JOptionPane.showMessageDialog(this, "Cuidado que el enemigo ha comprado un objeto");
+                enemigos.get(0).setDano(enemigos.get(0).getDano() + 75);
+            }
         }
     
     }
+    //MEtodos 
+    
     //Metodo para validar suber de nivel
     public void SubirLvl(){
         switch (cont_oro){
@@ -561,57 +922,149 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
                     break;
             }
     }
+    //Metodo para curar
+    public  void Curar(){
+        //Aumenta la vida del jugador
+        if (jugadores.get(0).getVida()<1000 && cont_vida > 0) {
+            jugadores.get(0).setVida(jugadores.get(0).getVida() + 50);
+            JOptionPane.showMessageDialog(this, "Te has curado: " + 50 + "hp");
+            txt_vida.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
+            txt_vida1.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
+            cont_vida--;
+        }
+        if (cont_vida <= 0) {
+            JOptionPane.showMessageDialog(this, "Se te acabaron las curas");
+        }
+        if (jugadores.get(0).getVida()>999) {
+            System.out.println("Ya tienes vida completa");
+            jugadores.get(0).setVida(1000);
+            txt_vida.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
+            txt_vida1.setText(String.valueOf("Vida " + jugadores.get(0).getVida()) + "/1000");
+        }
+    }
+    //Metodo para farmear
+    public void Farmear(){
+        jugadores.get(0).setOro(jugadores.get(0).getOro() + 250);
+        txt_oro.setText(String.valueOf("Oro " + jugadores.get(0).getOro()));
+        txt_oro1.setText(String.valueOf("Oro " + jugadores.get(0).getOro()));
+        cont_oro ++;
+        SubirLvl();
+        JOptionPane.showMessageDialog(this, "Has farmeado " + 250 + " Oro");
+        txt_lvl.setText(String.valueOf("Lvl " + jugadores.get(0).getNivel()) + "/10");
+        txt_lvl1.setText(String.valueOf("Lvl " + jugadores.get(0).getNivel()) + "/10");
+    }
     
+    //Metodo de Ataque
+    public void Atacar(){
+        enemigos.get(0).setVida(enemigos.get(0).getVida() - jugadores.get(0).getDano());
+        txt_vidaenemigo.setText(String.valueOf(enemigos.get(0).getVida()) + "/1000");
+        txt_vidaenemigo1.setText(String.valueOf(enemigos.get(0).getVida()) + "/1000");
+        JOptionPane.showMessageDialog(this, "Le hiciste: " + jugadores.get(0).getDano());
+        if (enemigos.get(0).getVida() <= 0) {
+            JOptionPane.showMessageDialog(this, "Enhorabuena, has derrotado al campeon :) ");
+        }
+    }
+    public void ult(){
+        if (cont_ult < 1) {
+            JOptionPane.showMessageDialog(this, "Ya has utilizado tu ultimate");
+        }else if(jugadores.get(0).getNivel() < 4){
+            JOptionPane.showMessageDialog(this, "No tienes el nivel suficiente, debes ser lvl 4");
+            
+        }else{
+            enemigos.get(0).setVida(enemigos.get(0).getVida() - (jugadores.get(0).getDano() + (jugadores.get(0).getDano()/3)));
+            txt_vidaenemigo.setText(String.valueOf(enemigos.get(0).getVida()) + "/1000");
+            txt_vidaenemigo1.setText(String.valueOf(enemigos.get(0).getVida()) + "/1000");
+
+            cont_ult--;
+        }if (enemigos.get(0).getVida() <= 0) {
+            JOptionPane.showMessageDialog(this, "Enhorabuena, has derrotado al campeon :) ");
+        }
+    }
 
     //Variables globales
     ArrayList<Jugador> jugadores = new ArrayList();
     ArrayList<Enemigo> enemigos = new ArrayList();
     int cont_vida = 3;
     int cont_oro = 0;
+    int cont_ult = 1;
     Random numr = new Random();
     
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_alassangrientas;
     private javax.swing.JButton btn_ataque;
+    private javax.swing.JButton btn_ataque1;
     private javax.swing.JButton btn_cecilion;
     private javax.swing.JButton btn_curar;
+    private javax.swing.JButton btn_curar1;
     private javax.swing.JButton btn_explane;
     private javax.swing.JButton btn_farmear;
+    private javax.swing.JButton btn_farmear1;
+    private javax.swing.JButton btn_filodesesperante;
+    private javax.swing.JButton btn_garrasdehaas;
     private javax.swing.JButton btn_goldlane;
     private javax.swing.JButton btn_jungler;
     private javax.swing.JButton btn_lesley;
     private javax.swing.JButton btn_midlane;
+    private javax.swing.JButton btn_regresar;
     private javax.swing.JButton btn_terizla;
     private javax.swing.JButton btn_tienda;
+    private javax.swing.JButton btn_tienda1;
     private javax.swing.JButton btn_ult;
+    private javax.swing.JButton btn_ult1;
+    private javax.swing.JButton btn_varitadegenio;
     private javax.swing.JButton btn_yin;
     private javax.swing.JLabel fondo;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JLabel label_fondo;
     private javax.swing.JLabel label_fondo1;
     private javax.swing.JLabel label_fondo2;
     private javax.swing.JLabel label_fondo3;
     private javax.swing.JLabel label_fondo4;
+    private javax.swing.JLabel label_fondo5;
     private javax.swing.JDialog panel_batalla_jungler;
+    private javax.swing.JDialog panel_batalla_mid;
     private javax.swing.JDialog panel_explane;
     private javax.swing.JDialog panel_goldlane;
     private javax.swing.JDialog panel_jungler;
     private javax.swing.JDialog panel_midlane;
+    private javax.swing.JDialog panel_tienda;
     private javax.swing.JLabel txt_lvl;
+    private javax.swing.JLabel txt_lvl1;
     private javax.swing.JLabel txt_oro;
+    private javax.swing.JLabel txt_oro1;
     private javax.swing.JLabel txt_vida;
+    private javax.swing.JLabel txt_vida1;
     private javax.swing.JLabel txt_vidaenemigo;
+    private javax.swing.JLabel txt_vidaenemigo1;
     // End of variables declaration//GEN-END:variables
 }
