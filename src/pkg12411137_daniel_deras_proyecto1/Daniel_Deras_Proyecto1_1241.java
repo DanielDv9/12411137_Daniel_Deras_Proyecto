@@ -149,6 +149,7 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
         btn_midlane = new javax.swing.JButton();
         btn_jungler = new javax.swing.JButton();
         btn_explane = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -849,6 +850,11 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
         });
         jPanel1.add(btn_explane, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 50, 50));
 
+        jLabel18.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("Bienvenido por favor seleccione una linea");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 240, -1));
+
         fondo.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\OneDrive\\Documentos\\AImagenesProyectoJava\\Odio esto.jpg")); // NOI18N
         jPanel1.add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
@@ -1521,6 +1527,7 @@ public class Daniel_Deras_Proyecto1_1241 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
